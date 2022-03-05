@@ -1,0 +1,29 @@
+<p class="heading">Pipes</p>
+<ul>
+<li><p class="subHeading clickableHead" (click)="angularPipeFlag=!angularPipeFlag">In-build Pipes</p></li>
+<div *ngIf="angularPipeFlag">
+<p>Example:</p>
+
+<p>Anything Written inside this input field will be converted into Uppercase using uppercase inbuild pipe</p>
+<input type="text" [(ngModel)]="inputText" >
+<p>-----------------</p>
+<p>After Adding uppercase inbuild pipe: {{inputText|uppercase}}</p>
+<hr>
+</div>
+
+
+<li><p class="subHeading clickableHead" (click)="customPipeFlag=!customPipeFlag">Custom pipes</p></li>
+<div *ngIf="customPipeFlag">
+<p>Example:</p>
+<p>Both number and string will be sorted using custom pipe sorting</p>
+<p>Actual Input:</p>
+<p>{{inputNum}}</p>
+<p>{{inputStr}}</p>
+--------------------
+<p>After Sorting:</p>
+<p>{{inputNum|sorting:'number'}}</p>
+<p>{{inputStr|sorting}}</p>
+</div>
+</ul>
+
+

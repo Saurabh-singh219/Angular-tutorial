@@ -1,0 +1,43 @@
+<p class="heading">Directives</p>
+<ul>
+<li><p class="subHeading">Structural Directives</p></li>
+1. ngIf
+2. ngFor
+3. ngClass
+4. ngTemplate
+
+<div class="blackDiv bottomMar">
+<p class="subHeading">ngif</p>
+type any age here if its greater than 18 you see 'vote'
+<input type="text" [(ngModel)]="age">
+<p *ngIf="age>18">Vote</p>
+</div>
+
+
+<div class="blackDiv bottomMar">
+<p class="subHeading">ngfor</p>
+we have an array stored in ts file now that array has to be in each rows of table
+<table id="customers">
+<tr *ngFor="let item of table"><td>{{item}}</td></tr>
+</table>
+</div>
+
+<div class="blackDiv bottomMar">
+<p class="subHeading">ngclass</p>
+<p>in the same above age input field if the value is range 18-50 below AGE word will be in orange div above that green div</p>
+<div [ngClass]="{greenBg: age>50,orangeBg: age>18 && age<51}">Age</div>
+</div>
+
+
+<div class="blackDiv bottomMar">
+<p class="subHeading">ngtemplate</p>
+<p>in the same above age input field we handle else case using ng template means vote or dont vote will show</p>
+<p *ngIf="age>18;else dontvote">Vote</p>
+<ng-template #dontvote>dont vote</ng-template>
+</div>
+
+<li><p class="subHeading">Custom Directives</p></li>
+<p>we will create owr own custom if directive in which we are passing "show" in html element thats why its howing if we pass anything else it will not show </p>
+<p *appCustomIf="'show'"> Hello</p>
+
+</ul>

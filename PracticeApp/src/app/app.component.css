@@ -1,0 +1,22 @@
+.section1{
+    background-color: #b4b3b8;;
+    height: 66px;
+    position: relative;
+    margin-top: -40px;
+  }.section2{
+    position: relative;
+    margin-top: -35px;
+}
+.section3{
+    display: inline-block;
+    border: 2px solid black;
+    width: 100%;
+}
+.buttonWidth{
+    width: 16.66%;
+}
+.headline{
+    font-family: fantasy;
+      font-size: 40px;text-align: center;
+    padding: 6px;
+}

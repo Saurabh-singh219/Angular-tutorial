@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+.subHeading{
+    font-weight: bold;
+    font-size: 14px;
+    }
+
+.heading{
+    font-weight: bold;
+    font-size: 18px;
+    }
+
+    #customers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      #customers td, #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      
+      #customers tr:nth-child(even){background-color: #f2f2f2;}
+      
+      #customers tr:hover {background-color: #ddd;}
+      
+      #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04AA6D;
+        color: white;
+      }
+
+.blackDiv{
+border: solid black 2px;
+}
+.bottomMar{
+    margin-bottom: 5px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.clickableHead{
+  cursor: pointer;
+}
+
+.tabBar{
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+  white-space: normal;
+  color: #fff!important;
+  cursor: pointer;
+}
+.blackBg{
+  background-color: black;
+}
+.blackBg:hover{
+  background-color: grey;
+}
+.redBg{
+  background-color: red;
+}

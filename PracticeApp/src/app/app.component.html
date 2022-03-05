@@ -1,0 +1,14 @@
+<div class="section1">
+      <p class="headline">Angular tutorials</p>
+<div>
+<!-- <table id="customers">
+    <tr *ngFor="let item of table" [routerLink]="item.link"><td>{{item.name}}</td></tr>
+</table> -->
+
+
+<div class="section2">
+    <button *ngFor="let item of table" class="tabBar buttonWidth" [ngClass]="{redBg: currentTab===item.name,blackBg: currentTab!==item.name}" (click)="openCity(item)">{{item.name}}</button>
+  </div>
+<div class="section3">
+<router-outlet></router-outlet>
+</div>

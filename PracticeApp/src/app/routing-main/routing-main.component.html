@@ -1,0 +1,27 @@
+<p class="heading">Routing</p>
+<div class="blackDiv bottomMar">
+<p class="subHeading">introduction</p>
+<p>basing routing can be seen in above section which is an exmample of routing, click on pipe section it will go to pipe</p>
+</div>
+
+
+<div class="blackDiv bottomMar">
+<p class="subHeading">child routes example</p>
+<button (click)="childRoutingExample()">Go to childRoute component</button>
+<p>on click of the above button, this files's child component will appear below all the boxes and also on top in address bar path will be changed</p>
+</div>
+
+
+<div class="blackDiv bottomMar">
+<p class="subHeading">passing static and dynamic data in routes</p>
+
+
+<input type="text" [(ngModel)]="inputText" >
+<p>just type anything in this box and click the button from the previous box you will see static data "angular" and dynamic data from the input box will appear below through routes</p>
+</div>
+
+
+<div>
+    
+    <router-outlet></router-outlet>
+</div>

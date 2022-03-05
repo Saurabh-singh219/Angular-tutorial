@@ -1,0 +1,18 @@
+<p>This data is coming from api call which can be seen in networks tabs by name 'users'</p>
+<ul>
+    <li *ngFor="let item of apiData">{{item.name}}</li>
+</ul>
+
+same api is also converted into promise and below is the same result
+<ul>
+    <li *ngFor="let item of apiData2">{{item.name}}</li>
+</ul>
+
+so now the difference between observable and promise we can understand by creating custom observable and promise:
+<ul>
+<li>We have both custom promise and custom observable in ts file and put them on running after every second it will keep on running</li>
+    <li>you can see console window and observe 'hello' is written only once (which is promise) while 'hi' is written 8 times (which is observable)</li>
+        <li>one promise object will always return data one times doesnt matter how many times you call it.</li>
+            <li>one observable can return the data everytime you call it.</li>
+<li>now to stop observable on keep on sending us data we need to use 'unsubscribe', so in ts we have written code that when we have got response till 8 sec now dont send us data.</li>
+</ul>
