@@ -18,6 +18,10 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {ReactiveFormsModule} from "@angular/forms";
 import { FormsComponent } from './forms/forms.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildBindComponent } from './child-bind/child-bind.component';
+import { FormExampleComponent } from './form-example/form-example.component';
+import { CurrencyPipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,10 @@ import { FormsComponent } from './forms/forms.component';
     OthersComponent,
     ChildRoutingComponent,
     RoutingMainComponent,
-    FormsComponent
+    FormsComponent,
+    ParentComponent,
+    ChildBindComponent,
+    FormExampleComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +50,7 @@ import { FormsComponent } from './forms/forms.component';
     NoopAnimationsModule,
     MatToolbarModule
   ],
-  providers: [],
+  providers: [CurrencyPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,52 @@
+input[type=text], select, [type=password], [type=number],option {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  textarea{
+    margin-right:20px
+  }
+
+  /* input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  } */
+
+ .myform {
+    border:2px solid black;
+    padding:25px;
+    width:50%
+  }
+
+  .phoneSelect{
+    width:20%
+  }
+  .phoneText{
+    width:50%
+  }
+  .my_class1{
+    background-color: grey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: not-allowed;
+  }
+  .my_class2{
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+  

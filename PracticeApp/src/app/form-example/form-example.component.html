@@ -1,0 +1,74 @@
+<img src="../../assets/1594289066187.jpg" style="display: inline;"> <h1 style="display: inline;"> Digital Chameleon Form </h1>
+<div class="myform">
+<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+ 
+    <!-- <p>
+      <label for="firstname">First Name</label>
+      <input type="text" name="firstname" ngModel required>
+    </p>
+   
+    <p>
+      <label for="lastname">Last Name</label>
+      <input type="text" name="lastname" ngModel>
+    </p> -->
+   
+    <p>
+      <label for="email">Email <span style="color:red;margin-right:5px">*</span>  </label>
+      <input type="text" id="email" name="email" ngModel required>
+    </p>
+    <p>
+    <label for="password">Password <span style="color:red;margin-right:5px">*</span> </label>
+     <input type="password" id="pass" name="pass" ngModel required>
+    
+    <input type="checkbox" (click)="myFunction1()">Show Password
+</p>
+    <p>
+     <label for="confirmPassword">Confirm Password <span style="color:red;margin-right:5px">*</span> </label>
+        <input type="password" id="cPass" name="Cpass" ngModel required>
+      
+      <input type="checkbox" (click)="myFunction2()">Show Password
+    </p>
+
+    <label for="phoneNumber">Phone Number <span style="color:red;margin-right:5px">*</span></label>
+    <p>
+    <select name="code" ngModel class="phoneSelect" required>
+        <option [ngValue]="c.id" *ngFor="let c of phoneList">
+          {{c.name}}
+        </option>
+      </select>
+      <input type="number" id="phone" name="phone" class="phoneText" ngModel required>
+    </p>
+    <p>
+      <label for="gender">Gender</label>
+      <input type="radio" value="male" name="gender" ngModel> Male
+      <input type="radio" value="female" name="gender" ngModel> Female
+    </p>
+    <p>
+        <label for="dob">DOB </label>
+        <input type="date" id="dob" name="dob" ngModel>
+      </p>
+      <p>
+        <label for="address">Address </label>
+      <textarea id="address" name="address" placeholder="Enter your address.." style="height:200px"></textarea>
+
+        <label for="hobbies">Hobbies </label>
+      <textarea id="hobbies" name="hobbies" placeholder="Enter your hobbies.." style="height:200px"></textarea>
+      </p>
+      <p>
+      <label for="profile">Profile Photo </label> 
+      <input type="file" (change)="loadFile($event)">
+    </p>
+      <p>
+        <input type="checkbox" >I agree that all given information above are correct.
+      </p>
+      <p>
+        <label for="income">Annual Income </label>
+      <input type="text"(blur)="transformAmount($event)" [(ngModel)]="formattedAmount" [ngModelOptions]="{standalone: true}"  />
+      </p>
+    <p>
+      <input type="submit" [disabled]="!contactForm.valid" [ngClass]="!contactForm.valid ? 'my_class1' : 'my_class2'">
+    </p>
+  
+
+  </form>
+</div>
